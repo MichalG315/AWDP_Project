@@ -1,51 +1,49 @@
-# World Energy Consumption Analysis
+# Analiza światowego zużycia energii
 
-This repository contains a data analysis project based on the **World Energy Consumption** dataset from Kaggle, derived from the *Energy* dataset maintained by Our World in Data.
+To repozytorium zawiera projekt analizy danych oparty na zbiorze danych **World Energy Consumption** z Kaggle, pochodzącym ze zbioru *Energy* utrzymywanego przez Our World in Data.
 
-## Project Overview
+## Opis projektu
 
-The goal of this project is to explore country trends in energy consumption, energy mix, and related indicators over time.  
-Using the dataset, the project examines how total energy use and the share of different energy sources (fossil fuels vs. renewables) have evolved across countries.
+Celem tego projektu jest zbadanie trendów krajowych w zużyciu energii, miksie energetycznym oraz powiązanych wskaźnikach na przestrzeni czasu.  
+Korzystając ze zbioru danych, projekt analizuje, jak całkowite zużycie energii oraz udział różnych źródeł energii (paliwa kopalne vs. odnawialne źródła energii) zmieniały się w poszczególnych krajach.
 
-This repository serves as the final project for the AWDP course.
+To repozytorium stanowi projekt końcowy na kurs AWDP.
 
-## Dataset
+## Zbiór danych
 
-The project uses the **Energy** dataset maintained by Our World in Data, made available on Kaggle under the name:
+Projekt wykorzystuje zbiór danych **Energy** utrzymywany przez Our World in Data, udostępniony na Kaggle pod nazwą:
 
 > World Energy Consumption – Energy Consumption and Mix dataset by Our World in Data
 
-Kaggle page (data source):
+Strona Kaggle (źródło danych):
 
-- https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption
+- [https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption](https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption)
 
-Key characteristics:
+Najważniejsze cechy:
+- Roczne dane na poziomie globalnym, regionalnym i krajowym.
+- Wskaźniki dotyczące pierwotnego zużycia energii, zużycia per capita, miksu energetycznego, miksu energii elektrycznej oraz produkcji paliw kopalnych.
+- Główny plik danych `owid-energy-data.csv` zawierający 130 kolumn.
 
-- Global, regional, and country-level yearly data.
-- Metrics on primary energy consumption, per‑capita consumption, energy mix, electricity mix, and fossil fuel production.
-- Main data file `owid-energy-data.csv` describing 130+ columns.
+## Pytania
 
-## Research Questions
+Projekt koncentruje się na takich pytaniach jak:
+- Jak globalne zużycie energii pierwotnej zmieniało się na przestrzeni czasu i które źródła energii napędzały te zmiany?
+- Jak miks energetyczny (odnawialne źródła energii vs. paliwa kopalne) różni się pomiędzy wybranymi krajami?
+- Które kraje zwiększyły udział energii odnawialnej w swoim miksie energetycznym i jak szybko przebiegała ta transformacja?
+- Jak zużycie energii per capita różni się pomiędzy krajami o wysokich i niskich dochodach?
+- Jaka jest zależność pomiędzy zużyciem energii a rozwojem gospodarczym (np. PKB per capita)?
 
-This project focuses on questions such as:
+## Metody i narzędzia
 
-- How has global primary energy consumption changed over time, and which energy sources have driven this change?
-- How does the energy mix (renewables vs. fossil fuels) differ between selected countries?
-- Which countries have increased the share of renewable energy in their energy mix, and how quickly has this transition happened?
-- How does energy consumption per capita differ between high‑income and low‑income countries?
-- What is the relationship between energy consumption and economic development (e.g. GDP per capita)?
+Analiza opiera się na typowym workflow stosowanym w data science:
 
-## Methods and Tools
+- **Pozyskiwanie danych** – pobranie zbioru danych z Kaggle i załadowanie go do środowiska analitycznego.
+- **Czyszczenie i wstępne przetwarzanie danych** – obsługa brakujących wartości, wybór istotnych zmiennych oraz filtrowanie danych do interesującego zakresu czasowego i krajów.
+- **Eksploracyjna analiza danych** – statystyki opisowe, wykresy szeregów czasowych oraz porównania między krajami.
+- **Wizualizacja** – wykresy przedstawiające długoterminowe trendy i różnice w miksie energetycznym (np. wykresy liniowe, skumulowane wykresy warstwowe, wykresy słupkowe).
 
-The analysis follows a typical data science workflow:
+Wykorzystane technologie (dostosuj do swojej konfiguracji):
 
-- **Data acquisition** – Downloading the Kaggle dataset and loading it into the analysis environment.
-- **Data cleaning & preprocessing** – Handling missing values, selecting relevant variables, and filtering to the time range and countries of interest.
-- **Exploratory data analysis** – Descriptive statistics, time-series plots, and comparisons by country.
-- **Visualization** – Charts that illustrate long‑term trends and differences in energy mix (e.g., line plots, stacked area charts, bar charts).
-
-Technologies used (adjust to match your setup):
-
-- Python (pandas, NumPy, Matplotlib, Seaborn / Plotly)
+- Python (`pandas`, `NumPy`, `Matplotlib`, `Seaborn` / `Plotly`)
 - Jupyter Notebook
-- Git and GitHub for version control and documentation
+- Git i GitHub
